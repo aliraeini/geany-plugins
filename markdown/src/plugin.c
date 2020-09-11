@@ -43,7 +43,7 @@ PLUGIN_SET_TRANSLATABLE_INFO(LOCALEDIR, GETTEXT_PACKAGE,
 #  define MARKDOWN_HELP_FILE MARKDOWN_DOC_DIR "/html/help.html"
 #endif
 
-#define MARKDOWN_PREVIEW_LABEL _("Markdown Preview")
+#define MARKDOWN_PREVIEW_LABEL _("Markdown")
 
 /* Global data */
 static MarkdownViewer *g_viewer = NULL;
