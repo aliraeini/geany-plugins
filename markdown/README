@@ -23,6 +23,8 @@ Features
 * Updates the preview on-the-fly as you type, automatically.
 * Allows simple customization of fonts and colours and complete control
   with custom template files.
+* In addition to Markdown files, HTML and SVG files are previewed on-the-fly
+  in the Webkit as they would apear in a web-browser.
 
 Usage
 -----

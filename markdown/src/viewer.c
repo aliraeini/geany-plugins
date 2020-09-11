@@ -337,6 +337,12 @@ markdown_viewer_get_html(MarkdownViewer *self)
     update_internal_text(self, "");
   }
 
+  if((self->priv->text->len > 1) && (self->priv->text->str[0]=='<') ) 
+  {
+	  html = g_malloc(strlen(self->priv->text->str) + 1); 
+	  strcpy(html, self->priv->text->str); html[strlen(self->priv->text->str)]='\0';
+  }
+  else
   {
 #ifndef FULL_PRICE  /* this version using Discount markdown library
                      * is faster but may invoke endless discussions
