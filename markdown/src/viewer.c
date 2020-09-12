@@ -388,9 +388,7 @@ markdown_viewer_update_view(MarkdownViewer *self)
     /* If the current document has a known path (ie. is saved), use that,
      * substituting the file's basename for `index.html`. */
     if (DOC_VALID(doc) && doc->real_path != NULL) {
-      gchar *base_dir = g_path_get_dirname(doc->real_path);
-      base_path = g_build_filename(base_dir, "index.html", NULL);
-      g_free(base_dir);
+      base_path = g_build_filename(doc->real_path, NULL);
     }
     /* Otherwise assume use a file `index.html` in the current working directory. */
     else {
